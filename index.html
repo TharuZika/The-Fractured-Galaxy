@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>The Fractured Galaxy</title>
+    <link rel="shortcut icon" href="#" />
+
+
+</head>
+<body>
+
+
+<audio id="startSong" src="assets/sounds/start.wav" muted></audio>
+<img class="universe" id="imgAsteroid" src="assets/images/asteroid1.png" alt="">
+<img class="universe" id="imgAsteroid2" src="assets/images/asteroid2.png" alt="">
+<img class="universe" id="imgAsteroid3" src="assets/images/asteroid1.png" alt="">
+<img class="universe" id="imgWorld" src="assets/images/world.png" alt="">
+
+<!--Game Over Page-->
+<div id="gameOver">
+    <h1 id="txtOver">Game Over</h1>
+    <h1 id="score">Your Score : 00</h1>
+    <button id="btnReStart">Retry</button>
+</div>
+
+<!--Game Win Page-->
+<div id="gameWin">
+    <h1 id="txtWin">Wow! You Win</h1>
+    <h1 id="winScore">Your Score : 00</h1>
+    <button id="btnReload">Play Again</button>
+</div>
+
+<!--Start Page-->
+<div id="gameStart">
+    <img class="universe" id="imgStartShip3" src="assets/images/startShip3.gif" alt="">
+    <h1>The Fractured Galaxy</h1>
+    <h3 class="instruction">Use Mouse or Arrow Keys to control</h3>
+    <h3 class="instruction">Click Mouse left button or "Space" to shoot</h3>
+    <button id="btnStart">Start</button>
+    <img class="universe" id="imgStartEarth" src="assets/images/StartEarth.png" alt="">
+</div>
+
+<!--ScoreBoard-->
+<div id="scoreBoard">
+    <h3 id="liveLevel">Level 0</h3>
+    <h3 id="liveScore">Score 0</h3>
+</div>
+
+<!--Game Canvas-->
+<canvas id="game"></canvas>
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script type="module" src="index.js"></script>
+</body>
+</html>
